@@ -136,6 +136,7 @@ h1 {
 /* Avatar Image Styling */
 .avatar-wrapper {
   margin-bottom: 20px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
 }
