@@ -1,0 +1,239 @@
+/* src/assets/main.css */
+
+:root {
+  /* Color Palette */
+  --deep-red: #8a0b0b;
+  --bright-red: #b91515;
+  --metallic-red: linear-gradient(180deg, #b91515 0%, #8a0b0b 100%);
+  --glass-white: rgba(255, 255, 255, 0.75);
+  --text-dark: #2c3e50;
+  --text-light: #5d6d7e;
+  
+  /* Background */
+  --bg-gradient: linear-gradient(135deg, #e0e7ff 0%, #f5f7fa 100%);
+  
+  /* Glass Effects */
+  --glass-blur: blur(15px);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.6);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  --inner-shine: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+/* Global Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg-gradient);
+  color: var(--text-dark);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+#app {
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Glassmorphism Utility Class */
+.glass-container {
+  background: var(--glass-white);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: var(--glass-border);
+  box-shadow: var(--glass-shadow), var(--inner-shine);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Navigation Styling */
+nav {
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 50px;
+  background: var(--glass-white);
+  backdrop-filter: var(--glass-blur);
+  border: var(--glass-border);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 600;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+nav a:hover, nav a.router-link-active {
+  color: var(--deep-red);
+}
+
+/* Header Styling */
+header {
+  margin-bottom: 30px;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--deep-red);
+  letter-spacing: -2px;
+  margin-bottom: 10px;
+}
+
+.logo span {
+  color: var(--text-dark);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-bottom: 25px;
+}
+
+/* Metallic Red Button Utility */
+.btn-metallic, .cta-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background: var(--metallic-red);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 50px;
+  border: 1px solid #6b0505;
+  box-shadow: 0 4px 6px rgba(138, 11, 11, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.btn-metallic:hover, .cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(138, 11, 11, 0.4);
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(138, 11, 11, 0.2), transparent);
+  margin: 30px 0;
+}
+
+/* Intro Text */
+.intro {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+.intro h2 {
+  color: var(--deep-red);
+  margin-bottom: 15px;
+}
+
+/* Services Grid */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  text-align: left;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 25px;
+  border-radius: 12px;
+  transition: background 0.3s;
+}
+
+.service-card:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.service-card i {
+  font-size: 2rem;
+  color: var(--deep-red);
+  margin-bottom: 15px;
+  background: var(--metallic-red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.skill-list {
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.skill-list li {
+  margin-bottom: 5px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.skill-list li::before {
+  content: "•";
+  color: var(--deep-red);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.skill-list a {
+  color: var(--deep-red);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.skill-list a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  text-align: center;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: var(--deep-red);
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.accent-red {
+  color: var(--deep-red);
+}
