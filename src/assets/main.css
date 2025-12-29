@@ -149,7 +149,7 @@ h1 {
 
   /* red ring (test) */
   padding: 4px;
-  background: var(--metallic-red);
+  /* background: var(--metallic-red); */
   /* glass shadow */
   box-shadow: var(--glass-shadow);
   border: var(--glass-border);
