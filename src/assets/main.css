@@ -133,6 +133,33 @@ h1 {
   margin: 30px 0;
 }
 
+/* Avatar Image Styling */
+.avatar-wrapper {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.home-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* makes it a perfect circle */
+  object-fit: cover; /* prevents stretching */
+
+  /* red ring (test) */
+  padding: 4px;
+  background: var(--metallic-red);
+  /* glass shadow */
+  box-shadow: var(--glass-shadow);
+  border: var(--glass-border);
+
+  transition: 0.3s ease;
+}
+
+.home-avatar:hover {
+  transform: scale(1.05);
+}
+
 /* Intro Text */
 .intro {
   max-width: 600px;
