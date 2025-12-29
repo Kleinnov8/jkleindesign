@@ -2,6 +2,9 @@
   <div class="glass-container">
     <header>
       <div class="logo">JKlein<span>Design</span></div>
+      <div class="avatar-wrapper">
+        <img :src="avatarUrl" alt="Justin Klein" class="home-avatar" />
+      </div>
       <h1>Justin Klein</h1>
       <p class="tagline">Creative Technologist & Digital Problem Solver</p>
       <a href="mailto:kleinnov8@gmail.com" class="cta-button">Get in Touch</a>
@@ -63,5 +66,6 @@
 </template>
 
 <script setup>
+  import avatarUrl from '../assets/avatar.png' // Import the image variable
 // No extra logic needed for now
 </script>
