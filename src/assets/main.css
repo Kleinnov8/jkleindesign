@@ -256,7 +256,7 @@ footer {
 }
 
 .social-links a {
-  color: var(--deep-red);
+  color: var(--bright-red);
   margin: 0 10px;
   text-decoration: none;
   font-weight: 600;
