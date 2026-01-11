@@ -265,3 +265,85 @@ footer {
 .accent-red {
   color: var(--deep-red);
 }
+
+/* --- PORTFOLIO PROJECT GRID STYLES --- */
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  overflow: hidden; /* Keeps image inside rounded corners */
+  transition: transform 0.2s ease, background 0.3s;
+  text-align: left; /* Aligns text inside card to left, even if container is centered */
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 20px rgba(138, 11, 11, 0.1);
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .image-wrapper img {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.project-card .category {
+  font-size: 0.85rem;
+  color: var(--bright-red);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.project-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--text-dark);
+  font-size: 1.3rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.view-btn {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--bright-red);
+  border-bottom: 2px solid var(--deep-red);
+  padding-bottom: 2px;
+  transition: opacity 0.2s;
+}
+
+.view-btn:hover {
+  opacity: 0.7;
+}
