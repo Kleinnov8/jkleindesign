@@ -10,6 +10,30 @@
             <img :src="project.image" :alt="project.title" class="main-image" />
         </div>
 
+        <section class="case-study-content">
+
+            <div class="card-content">
+                <h3>The Challenge</h3>
+                <p>{{ project.details.challenge }}</p>
+            </div>
+
+            <div class="card-content">
+                <h3>The Strategy</h3>
+                <p>{{ project.details.strategy }}</p>
+            </div>
+
+            <div class="card-content">
+                <h3>The Result</h3>
+                <p>{{ project.details.result }}</p>
+            </div>
+
+            <div class="card-content">
+                <h3>Tech Stack</h3>
+                <p>{{ project.details.techStack }}</p>
+            </div>
+            
+        </section>
+
     </div>
 </template>
 
