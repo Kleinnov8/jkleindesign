@@ -5,7 +5,7 @@
 <template>
     <section class="glass-container">
         <div class="logo">My Work</div>
-        
+
         <header>
             <h3>NOTE: This page is currently UNDER CONSTRUCTION.</h3>
             <h4>To view more examples of my work, please <a href="https://www.linkedin.com/in/justinkleindesign/">visit my LinkedIn!</a></h4>
@@ -24,5 +24,9 @@
                 </div>
             </div>
         </div>
+
+        <footer>
+            <p>&copy; 2025-<span>{{ currentYear }}</span> Justin Klein. All Rights Reserved. | Serving Montgomery County & Beyond.</p>
+        </footer>
     </section>
 </template>

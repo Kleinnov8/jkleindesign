@@ -34,8 +34,12 @@
                 </div>
             </section>
 
-            <footer class="project-footer">
+            <div class="project-footer">
                 <a :href="project.externalLink" target="_blank" class="view-btn">Visit Live Site ({{ project.externalLink }}) &rarr; </a>
+            </div>
+
+            <footer>
+                <p>&copy; 2025-<span>{{ currentYear }}</span> Justin Klein. All Rights Reserved. | Serving Montgomery County & Beyond.</p>
             </footer>
         </div>
 
