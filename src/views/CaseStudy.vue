@@ -36,6 +36,11 @@
             <a :href="project.externalLink" target="_blank" class="visit-btn">Visit Live Site</a>
         </footer>
     </div>
+
+    <div v-else class="error-state">
+        <p>Project not found.</p>
+        <router-link to="/portfolio" class="back-link">← Back to Portfolio</router-link>            
+    </div>
 </template>
 
 
