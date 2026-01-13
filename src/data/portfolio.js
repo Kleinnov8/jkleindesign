@@ -20,7 +20,7 @@ export const projects = [
         id: 3,
         title: "Camp Bow Wow - Print and Branding",
         category: "Print and Branding",
-        image: "https://placehold.co/600x400",
+        image: "src/assets/cbw-pettalkmagazine-2pagespread.jpg",
         description: "Full suite of print marketing materials and brand collateral.",
         link: "#"
     },
