@@ -100,12 +100,12 @@ h1 {
   margin-bottom: 10px;
 }
 
-h3 a {
+h4 a {
   color: var(--bright-red);
   text-decoration: none;
 }
 
-h3 a:hover {
+h4 a:hover {
   text-decoration: underline;
 }
 
