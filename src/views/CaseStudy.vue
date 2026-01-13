@@ -2,7 +2,7 @@
     <div v-if="project" class="case-study-container">
         <header class="project-header">
             <h1>{{ project.title }}</h1>
-            <p>Currently viewing project ID: <strong>{{ $route.params.id }}</strong></p>
+            <p>Currently viewing: <strong>{{ id }}</strong></p>
             <router-link to="/portfolio" class="back-link">← Back to Portfolio</router-link>
         </header>
 
@@ -49,16 +49,21 @@
 
 
 <script setup>
+
 import { computed } from 'vue';
-import { useRoute } from 'vue-router';
 import { projects } from '@/data/portfolio.js'
 
-const route = useRoute();
+const props = defineProps({
+    id: {
+        type: String,
+        required: true
+    }
+});
 
 // 1. Find the project that matches the ID in the URL
 const project = computed(() => {
-    const projectId = parseInt(route.params.id);
-    return projects.find((p) => p.id === projectId);
+    // We look for a project where the link contains the ID (slug) from the URL
+    return projects.find((p) => p.link.includes(props.id));
 });
 
 // 2. Format the techStack string into an array for the v-for list
@@ -66,4 +71,5 @@ const techArray = computed(() => {
     if (!project.value || !project.value.details.techStack) return [];
     return project.value.details.techStack.split(',');
 });
+
 </script>
