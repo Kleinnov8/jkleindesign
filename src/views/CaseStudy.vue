@@ -2,7 +2,7 @@
     <div class="case-study-container">
         <div v-if="project" class="case-study-content">
             <header class="project-header">
-                <router-link to="/portfolio" class="back-link">← Back to Portfolio</router-link>
+                <router-link to="/portfolio" class="back-link">&larr; Back to Portfolio</router-link>
                 <h1>{{ project.title }}</h1>
             </header>
 
