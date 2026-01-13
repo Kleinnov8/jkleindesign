@@ -262,12 +262,12 @@ footer {
 }
 
 .social-links {
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .social-links a {
   color: var(--bright-red);
-  margin: 0 10px;
+  margin: 10px;
   text-decoration: none;
   font-weight: 600;
 }

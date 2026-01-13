@@ -56,16 +56,18 @@
     </section>
 
     <footer>
-      <p>&copy; 2025-2026 Justin Klein. All Rights Reserved. | Serving Montgomery County & Beyond.</p>
+      <p>&copy; 2025-<span>{{ currentYear }}</span> Justin Klein. All Rights Reserved. | Serving Montgomery County & Beyond.</p>
       <div class="social-links">
-        <a href="https://www.linkedin.com/in/justinkleindesign/">LinkedIn</a>
-        <a href="https://github.com/Kleinnov8">GitHub</a>
+        <a href="https://www.linkedin.com/in/justinkleindesign/">LinkedIn <i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Kleinnov8">GitHub <i class="fa-brands fa-github"></i></a>
       </div>
     </footer>
   </div>
 </template>
 
 <script setup>
-  import avatarUrl from '../assets/avatar.png' // Import the image variable
-// No extra logic needed for now
+  const currentYear = new Date().getFullYear();
+  import avatarUrl from '../assets/avatar.png'; // Import the image variable
+
+  
 </script>
