@@ -6,7 +6,7 @@ export const projects = [
         category: "Web Design and Document Conversion",
         image: "https://placehold.co/600x400",
         description: "A responsive blog website based on a published e-book, focusing on the origins of oilfield technology.",
-        link: "/case-study/oilfield-tech-origins"
+        link: "https://oilfieldtechorigins.com/"
     },
     {
         id: 2,
