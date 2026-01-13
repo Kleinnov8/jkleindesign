@@ -16,7 +16,7 @@
                     <span class="category">{{ project.category }}</span>
                     <h3>{{ project.title }}</h3>
                     <p>{{ project.description }}</p>
-                    <a :href="project.link" class="view-btn">View Project &rarr;</a>
+                    <router-link :to="project.link" class="view-btn">View Project &rarr;</router-link>
                 </div>
             </div>
         </div>
