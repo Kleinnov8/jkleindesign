@@ -28,7 +28,7 @@ export const projects = [
         id: 4,
         title: "Farley's Fit Kitchen",
         category: "Web Design and Branding",
-        image: "https://placehold.co/600x400",
+        image: "src/assets/ffk-website-preview.PNG",
         description: "A responsive meal-prep website focusing on mobile conversion.",
         link: "/case-study/farleys-fit-kitchen"
     },
