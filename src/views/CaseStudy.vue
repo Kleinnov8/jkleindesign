@@ -37,9 +37,11 @@
         </footer>
     </div>
 
-    <div v-else class="error-state">
-        <p>Project not found.</p>
-        <router-link to="/portfolio" class="back-link">← Back to Portfolio</router-link>            
+    <div v-else class="case-study-container">
+        <div class="case-study-content error-state">
+            <p>Project not found.</p>
+            <router-link to="/portfolio" class="back-link">← Back to Portfolio</router-link>  
+        </div>
     </div>
 </template>
 
