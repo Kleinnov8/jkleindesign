@@ -6,7 +6,7 @@ export const projects = [
         category: "Web Design and Document Conversion",
         image: "/images/portfolio/oilfieldtechorigins-site-preview.png",
         description: "A professional technical blog and digital resource converted from a comprehensive e-book series.",
-        link: "https://oilfieldtechorigins.com/",
+        link: "/case-study/oilfield-tech-origins",
         details: {
             challenge: "The author had 17 chapters of information-dense technical content 'trapped' in Microsoft Word. The documents featured complex patent drawings and manual schematics nested in tables that were difficult to translate into a responsive web format without losing technical accuracy.",
             strategy: "I developed a 'CSS-First' WordPress architecture, avoiding heavy page builders in favor of lightweight, custom-coded layouts. I engineered a library of custom reusable blocks to handle complex image-and-text layouts, ensuring every diagram was mobile-responsive and visually polished using clean HTML and CSS.",
