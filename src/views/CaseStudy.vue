@@ -33,7 +33,7 @@
         </section>
 
         <footer class="project-footer">
-            <a :href="project.externalLink" target="_blank" class="visit-btn">Visit Live Site</a>
+            <a :href="project.externalLink" target="_blank" class="visit-btn">Visit Live Site &rarr;</a>
         </footer>
     </div>
 
