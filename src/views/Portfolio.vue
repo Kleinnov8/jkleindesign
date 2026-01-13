@@ -1,4 +1,5 @@
 <script setup>
+    import { currentYear } from '../router';
     import { projects } from '@/data/portfolio.js';
 </script>
 

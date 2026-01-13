@@ -66,7 +66,7 @@
 </template>
 
 <script setup>
-  const currentYear = new Date().getFullYear();
+  import { currentYear } from '../router';
   import avatarUrl from '../assets/avatar.png'; // Import the image variable
 
   

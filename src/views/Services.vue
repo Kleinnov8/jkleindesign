@@ -7,3 +7,7 @@
         <p>&copy; 2025-<span>{{ currentYear }}</span> Justin Klein. All Rights Reserved. | Serving Montgomery County & Beyond.</p>
     </footer>
 </template>
+
+<script setup>
+    import { currentYear } from '../router';
+</script>

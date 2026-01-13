@@ -59,6 +59,7 @@
 
 import { computed } from 'vue';
 import { projects } from '@/data/portfolio.js'
+import { currentYear } from '../router';
 
 const props = defineProps({
     id: {

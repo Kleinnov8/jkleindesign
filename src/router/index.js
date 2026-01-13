@@ -16,4 +16,8 @@ const router = createRouter({
     routes
 })
 
-export default router
+const currentYear = new Date().getFullYear();
+
+export { currentYear };
+
+export default router;
