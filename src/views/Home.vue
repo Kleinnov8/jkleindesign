@@ -56,9 +56,9 @@
     </section>
 
     <footer>
-      <p>&copy; 2025 Justin Klein | JKleinDesign. Serving Montgomery County & Beyond.</p>
+      <p>&copy; 2025-2026 Justin Klein. All Rights Reserved. | Serving Montgomery County & Beyond.</p>
       <div class="social-links">
-        <a href="#">LinkedIn (TODO)</a>
+        <a href="https://www.linkedin.com/in/justinkleindesign/">LinkedIn</a>
         <a href="https://github.com/Kleinnov8">GitHub</a>
       </div>
     </footer>
