@@ -11,7 +11,6 @@
         </div>
 
         <section class="case-study-content">
-
             <div class="card-content">
                 <h3>The Challenge</h3>
                 <p>{{ project.details.challenge }}</p>
@@ -31,9 +30,11 @@
                 <h3>Tech Stack</h3>
                 <p>{{ project.details.techStack }}</p>
             </div>
-            
         </section>
 
+        <footer class="project-footer">
+            <a :href="project.externalLink" target="_blank" class="visit-btn">Visit Live Site</a>
+        </footer>
     </div>
 </template>
 
