@@ -33,7 +33,7 @@
             </section>
 
             <footer class="project-footer">
-                <a :href="project.externalLink" target="_blank" class="visit-btn">Visit Live Site &rarr;</a>
+                <a :href="project.externalLink" target="_blank" class="view-btn">Visit Live Site ({{ project.externalLink }}) &rarr; </a>
             </footer>
         </div>
 
