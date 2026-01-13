@@ -4,8 +4,8 @@
 
 <template>
     <section class="glass-container">
-        <h2>My Work</h2>
-        <h3>UNDER CONSTRUCTION</h3>
+        <div class="logo"><span>My</span> Work</div>
+        <h3>NOTE: This page is currently UNDER CONSTRUCTION. To view more examples of my work, please <a href="https://www.linkedin.com/in/justinkleindesign/">visit my LinkedIn!</a></h3>
 
         <div class="portfolio-grid">
             <div v-for="project in projects" :key="project.id" class="project-card">
