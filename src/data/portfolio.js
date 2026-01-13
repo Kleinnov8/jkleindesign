@@ -12,7 +12,7 @@ export const projects = [
         id: 2,
         title: "Camp Bow Wow - Chairman's Ball Poster (Judge's Choice Award)",
         category: "Print and Video",
-        image: "https://placehold.co/600x400",
+        image: "src/assets/cbw-greatestshowonearth-poster-photo.JPG",
         description: "A custom poster inspired by old-school circus posters, and the video that played on a screen in the middle of the poster.",
         link: "/case-study/cbw-chairmans-ball-poster"
     },
