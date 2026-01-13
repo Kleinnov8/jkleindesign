@@ -28,7 +28,9 @@
 
                 <div class="card-content">
                     <h3>Tech Stack</h3>
-                    <p>{{ project.details.techStack }}</p>
+                    <ul class="tech-list">
+                        <li v-for="tech in techArray" :key="tech">{{ tech }}</li>
+                    </ul>
                 </div>
             </section>
 
@@ -61,16 +63,19 @@ const props = defineProps({
     }
 });
 
-// 1. Find the project that matches the ID in the URL
+// Find the project that matches the ID in the URL
 const project = computed(() => {
     // We look for a project where the link contains the ID (slug) from the URL
     return projects.find((p) => p.link.includes(props.id));
 });
 
-// 2. Format the techStack string into an array for the v-for list
+// Format the techStack string into an array for the v-for list
 const techArray = computed(() => {
-    if (!project.value || !project.value.details.techStack) return [];
-    return project.value.details.techStack.split(',');
+    // Grab the techStack string as an array
+    if (!project.value?.details?.techStack) return [];
+    
+    // Split the string and trim whitespace from each item
+    return project.value.details.techStack.split(',').map(item => item.trim());
 });
 
 </script>

@@ -359,7 +359,7 @@ footer {
 }
 
 
-/* --- Case Study Placeholder Styles --- */
+/* --- Case Study Styles --- */
 
 .case-study-container {
   padding: 120px 20px;
@@ -403,4 +403,22 @@ footer {
 
 .back-link:hover {
   color: var(--bright-red);
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-list li {
+  background: var(--metallic-red);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 16px;
+  font-size: 0.8rem;
 }

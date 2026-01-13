@@ -12,7 +12,7 @@ export const projects = [
             challenge: "The author had 17 chapters of information-dense technical content 'trapped' in Microsoft Word. The documents featured complex patent drawings and manual schematics nested in tables that were difficult to translate into a responsive web format without losing technical accuracy.",
             strategy: "I developed a 'CSS-First' WordPress architecture, avoiding heavy page builders in favor of lightweight, custom-coded layouts. I engineered a library of custom reusable blocks to handle complex image-and-text layouts, ensuring every diagram was mobile-responsive and visually polished using clean HTML and CSS.",
             result: "The project was a major success, receiving immediate validation during a high-level industry presentation. Following a Microsoft Teams meeting with industry peers, the President of a prominent firm requested to feature the site in their external corporate newsletter as a premier industry resource.",
-            techStack: "WordPress, HTML5, Custom CSS3 (Flexbox/Grid), Vanilla JavaScript, Markdown Conversion."
+            techStack: "WordPress, HTML5, Custom CSS3 (Flexbox/Grid), Vanilla JavaScript, Markdown Conversion"
         }
     },
     {
